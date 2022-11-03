@@ -3,9 +3,9 @@ class Solution {
         int sum=0,sum1=1;
         while(n>0)
         {
-            int r=n%10;
-            sum=sum+r;
-            sum1=sum1*r;
+            
+            sum=sum+(n%10);
+            sum1=sum1*(n%10);
             n=n/10;
         }
         return sum1-sum;
